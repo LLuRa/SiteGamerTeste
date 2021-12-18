@@ -1,0 +1,676 @@
+<!DOCTYPE html>	<!--Identifica a versão do navegador-->
+<html lang="pt-br"> <!--Inicia o html e define o idioma-->
+<head>	<!--Cabeçalho-->
+    <title>Persona 5 Royal</title>	<!--Define o Titulo que aparece na guia-->
+    <link rel="shortcut icon" href="img/Elements/SiteIcone.ico"/> <!--Define o ícone da guia-->
+    <meta charset="UTF-8"/> <!--Identifica caracteres especiais-->
+    <meta name="viewport" content="width=device-width initial-scale=1"/> <!--Define a responsividade do site-->
+    <meta name="description" content="Autor: Lucas Daniel da Costa Rabaquim Data: 03.08.2021 Titulo: Site Gamer Onepage"/> <!--Descrição geral do site-->
+</head> <!--Fecha cabeçalho-->
+<body> <!--Abre o corpo do site-->
+	<button id="btnReturn"> <!--Botão de retorno-->
+		<a href="#Home"> <!--Link para o começo do site--> 
+			<img src="img/btnReturn/btnGif.gif"/> <!--Imagem gif no botão-->
+			<p>Goho-M</p>
+		</a>
+	</button>
+	<section id="Home"> <!--Seção do início do site-->
+		<div id="Inicio">	<!--Div mostrando imagen e nome site-->
+			<center> <!--Centraliza-->
+				<label for="FundoClaro" id="FundoLabel">Tema Dia </label><br><br> <!--Label relacionada ao slider que muda o fundo do site-->
+				<label for="FundoEscuro" id="FundoLabel">Tema Noite</label> <!--Label relacionada ao slider que muda o fundo do site-->
+			</center>
+			<img src="img/Elements/LetUsStartTheGame.jpg"/><br><br> <!--Insere a imagem que está no topo do site-->
+			<h1>
+				<b>
+					｜ Fan Page do jogo:<br> <!-- <b> deixa negrito, e <br> pula linha-->
+					｜ Persona 5 Royal
+				</b>
+			</h1>
+		</div>	
+		<nav> <!--Elemento para criar menus-->
+			<center> 
+				<ul> <!--Lista não ordenada dos links-->
+					<li><a href="#Home">Home</a></li> <!--Lista com Links para as seções do site-->
+					<li><a href="#GameplayImagens">Gameplay</a></li>
+					<li><a href="#SobreJogo">Sobre o Jogo</a></li>
+					<li><a href="#Personagens">Persongens</a></li>
+					<li><a href="#SobreSite">Sobre o site</a></li>
+				</ul>
+			</center>
+		</nav>
+		<video controls> <!--Coloca um vídeo no site-->
+			<source src="vid/Opening.mp4" type="video/mp4">
+		</video>			
+		<div id="video">
+			<img src="img/Elements/DivVideo.png">
+		</div>
+	</section>
+	<section id="GameplayImagens">
+		<center><p><b>Imagens de Gameplay</b></p></center>
+		<ul id="SlideGameplay"> <!--Lista não ordenada para fazer slide show-->
+			<li> <!--Lista para cada imagem-->
+				<input type="radio" id="SlideImg1" name="SlideG"checked/> <!--Botão de input para saber qual o atual slide--> <!--Checked define como checado-->
+				<img src="img/Gameplay/GPimg1.jpg"/> <!--Imagem do slide-->
+				<label for="SlideImg1"></label> <!--Label para substituir visualmente o input-->
+			</li>
+			<li>
+				<input type="radio" id="SlideImg2" name="SlideG">
+				<img src="img/Gameplay/GPimg2.gif"/>
+				<label for="SlideImg2"></label>
+			</li>
+			<li>
+				<input type="radio" id="SlideImg3" name="SlideG">
+				<img src="img/Gameplay/GPimg3.jfif"/>
+				<label for="SlideImg3"></label>
+			</li>
+			<li>
+				<input type="radio" id="SlideImg4" name="SlideG">
+				<img src="img/Gameplay/GPimg4.png"/>
+				<label for="SlideImg4"></label>
+			</li>
+			<li>
+				<input type="radio" id="SlideImg5" name="SlideG">
+				<img src="img/Gameplay/GPimg5.jpg">
+				<label for="SlideImg5"></label>
+			</li>
+			<li>		
+				<input type="radio" id="SlideImg6" name="SlideG">
+				<img src="img/Gameplay/GPimg6.jpg">
+				<label for="SlideImg6"></label>
+			</li>
+		</ul>
+	</section><br><br>
+	<section id="SobreJogo">		
+		<img src="img/Elements/Capa.jpg"/>
+		<div id="SobreJogoTexto">
+			<center>
+			<h1><br>Sobre o Jogo</h1><br> <!-- <h1> são titulos-->
+			<hr/><br>
+			<h3>JRPG/Simulador Social</h3><br>
+			<p>
+			 O jogo se passa na Tóquio atual e segue o protagonista após sua transferência para a Academia Shujin,
+			 depois de ser colocado em liberdade condicional por um assalto que não cometeu. Durante o ano escolar,
+			 ele e outros estudantes despertam sua Persona, o outro "eu" que possuem, tornando-se um grupo de
+			 justiceiros conhecidos como "Phantom Thieves of Hearts". Eles exploram o Metaverse, o mundo da
+			 manifestação física dos desejos subconscientes da humanidade, para roubar o coração de adultos
+			 perversos e fazê-los confessarem seus crimes.
+			</p><br> <!-- <p> são paragrafos-->
+			<p>Persona 5 Royal introduz novos personagens, sistema de combate, elementos de gameplay, músicas e muito mais. A evolução de uma obra prima tão aclamada pela crítica.</p><br>
+			<h2>Música de abertura: "Colors Flying High"</h2><br>
+			<audio controls> <!--Adiciona audio para o site-->
+				<source src="mus/Opening.mp3" type="audio/mpeg">
+			</audio></center>
+		</div>
+	</section>
+	<section id="Personagens">
+		<ul class="SliderPersonagem">
+			<li>
+				<input type="radio" id="Personagem0" name="SlidePersonagem" checked/>
+				<div id="Fool"> <!--O mesmo dos slides shows anteriores, substituindo "img" por "div"-->
+					<img src="img/Personagens/Fool.gif">
+					<h1>"Joker"</h1>
+					<hr/> <!--Linha decorativa-->
+					<p> O protagonista (com nome decidido pelo jogador) é acusado por um crime que não cometeu,<br> ao tentar
+					defender uma pessoa em perigo. Com a ficha criminal suja é colocado para viver<br> sobre provação na cidade
+					de Yongen-Jaya por um ano como um estudante honesto.<br> Seu guardião, Sojiro Sakura, te trata como o
+					“delinquente” que sua ficha diz, mas<br> o deixa dormir no sótão de sua cafeteria. 
+					Na noite em que chega você tem um sonho<br> estranho com a "Velvet room", dentro de uma cela vestido como prisioneiro.<br>
+					A única certeza que recebe é de que seu futuro foi roubado, e o mundo aguarda sua ruína.   
+					</p>
+				</div>
+				<label for="Personagem0"></label>
+			</li>
+			<li>
+				<input type="radio" id="Personagem1" name="SlidePersonagem">
+				<div id="Chariot">
+					<img class="ImgPersonagem" src="img/Personagens/Chariot.png">
+					<h1>Ryuji Sakamoto</h1>
+					<hr/>
+					<p>
+					 Um delinquente da Academia Shujin, mesma escola que você frequentará.<br>
+					 Se “tornou” um após atacar um professor de educação física, que
+					 torturava<br> com exercícios abusivos os seus parceiros de time, depois
+					 que o professor revelou<br> um segredo sobre sua família. O time de corrida,
+					 a qual pertencia, foi desfeito<br> por causa do ocorrido.<br> Ryuji se tornou o “traidor” que acabou
+					 com o time e sonho de seus colegas.
+					</p>
+				</div>
+				<label for="Personagem1"></label>
+			</li>
+			<li>
+				<input type="radio" id="Personagem2" name="SlidePersonagem" >
+				<div id="Magician">
+					<img class="ImgPersonagem" src="img/Personagens/Magician.jfif">
+					<h1>Morgana</h1>
+					<hr/>
+					<p>
+					 Um misterioso ser que diz não ser um gato, encontrado no “Metaverse”
+					 e sabendo<br> muito sobre esse mundo.<br> Ambos se ajudam a enfrentar os desafios
+					 que encontram.  No mundo real, Morgana<br> como um gato, oferece um acordo. 
+					 Seus conhecimentos sobre esse perigoso mundo em<br> troca de comida e abrigo.
+					</p>
+				</div>
+				<label for="Personagem2"></label>
+			</li>
+			<li>
+				<input type="radio" id="Personagem3" name="SlidePersonagem" >
+				<div id="Strength">
+					<img class="ImgPersonagem" src="img/Personagens/Strength.png">
+					<h1 id="NomePersonagem">Gêmeas Carcereiras</h1>
+					<hr/>
+					<p>Justine e Caroline são carcereiras e residentes da misteriosa 
+					“Velvet Room”.<br> Tem a missão de ajudá-lo em sua “reabilitação”, fortalecendo 
+					suas Personas para<br> se opor contra a “ruína” do mundo, e tentar recuperar seu 
+					futuro roubado.
+					</p>
+				</div>
+				<label for="Personagem3"></label>
+			</li>
+			<li>
+				<input type="radio" id="Personagem4" name="SlidePersonagem">
+				<div id="Hierophant">
+					<img class="ImgPersonagem" src="img/Personagens/Hierophant.jfif">
+					<h1 id="NomePersonagem">Sojiro Sakura</h1>
+					<hr/>
+					<p>
+					Dono da cafeteria “Leblanc” na cidade de Yongen-Jaya, e seu guardião.<br>
+					Um velho ranzinza que faz ótimos cafés e curry’s e evita entrar
+					em qualquer<br> tipo de problema, procurando uma vida tediosa e pacifica.<br>
+					Mas então, porque ele escolheu ser seu guardião? 
+					</p>
+				</div>
+				<label for="Personagem4"></label>
+			</li>
+			<li>
+				<input type="radio" id="Personagem5" name="SlidePersonagem">
+				<div id="Faith">
+					<img class="ImgPersonagem" src="img/Personagens/Faith.png">
+					<h1 id="NomePersonagem">Kasumi Yoshizawa</h1>
+					<hr/>
+					<p>
+					 Uma impressionante e ambiciosa ginasta da Academia Shujin. Após a<br> 
+					 morte de sua irmã em um acidente de carro prometeu alcançar o topo
+					 do<br> mundo da ginastica, um objetivo que as duas compartilhavam.
+					Com sua<br> baixa performance em suas provas e a confiança na sua inocência
+					pede que<br> você a aconselhe para melhorar seus resultados. Em troca ela será sua
+					treinadora de<br> ginasticas, ensinando movimentos que
+					serão essenciais ao explorar o “Metaverse”.<br><br>
+					Kasumi Yoshizawa é uma nova personagem introduzida a Persona 5 Royal.
+					</p>
+				</div>
+				<label for="Personagem5"></label>
+			</li>
+		</ul>
+	</section>
+	<section id="SobreSite">
+		<footer>
+			<center><br>
+				<h1>Sobre o Site</h1><br>
+				<hr></hr><br>
+				<p>
+				Site criado para atividade de programação Web: "homenagear seu jogo favorito por meio do que foi ensinado em aula."<br>
+				O objetivo foi uma introdução básica, quase sem spoiler, e mostrar a diversidade de elementos desse jogo para despertar curiosidade por essa obra de arte.<br>
+				Cridador: Lucas Daniel da Costa Rabaquim <br> Escola: Professor Basilides de Godoy<br><br>2021
+				</p><br>
+				<h2>O jogo é propriedade inteiramente de: © ATLUS. © SEGA. Todos os direitos reservados.</h2>
+			</center>
+		</footer>
+	</section>
+	<ul id="FundoSite"> <!--Slider que altera o fundo do site-->
+		<li>
+			<input type="radio" id="FundoClaro" name="Fundo" checked/>
+			<img src="img/FundoSite/FundoClaro.jpg"/>
+		</li>
+		<li>
+			<input type="radio" id="FundoEscuro" name="Fundo"/>
+			<img src="img/FundoSite/FundoEscuro.jpg"/>
+		</li>
+	</ul>
+</body>
+</html>
+<style>
+*{ /*Afeta todo o Css, definindo margem e preenchemento como 0.*/
+	margin:0px;
+	padding:0px;
+}
+/*Inicio botão de retorno*/
+#btnReturn{ 
+	width:60px;
+	height:90px;
+	bottom:35px; /*Define a distacia da parte de baixo da tela*/
+	right:10px; /*Define a distacia da direita da tela*/
+	border-radius:10px; /*Define o raio da borda*/
+	position:fixed; /*Define como fiza a posição do botão*/
+	background:#000; /*Define cor de fundo*/
+	padding-bottom:30px; /*Define preencimento da parte debaixo*/
+	z-index:15;
+}
+#btnReturn:hover{
+	background:#fff;
+}
+#btnReturn p{
+	background:#ff0103;
+	width:auto;
+	height:auto;
+	position:relative; /*Define a posição como relativa ao elemento a que pertence*/
+	font-family:"arial"; /*Define a fonte*/
+	color:#fff; /*Define a cor da fonte*/
+	border-radius:5px;
+}
+#btnReturn img{
+	width:50px;
+	height:80px;
+	position:relative;
+}
+#btnGif{
+	width:60px;
+	height:90px;
+	position:fixed;
+	bottom:40px;
+	right:10px;
+}
+/*Fim do botão de retorno*/
+/*Section de inicio*/
+	/*Div com foto do jogo*/
+#Inicio{
+	width:100%;
+	height:170px;
+	background:linear-gradient(to bottom,#640000 2%,#ff0103 50%);
+}
+#Inicio img{
+	width:300px;
+	height:163px;
+	position:absolute; /*Define como absoluta a posição*/
+	top:0%;
+}
+#Inicio h1{
+	margin-left:310px; /*Define o tamanho de margem esquerda que possui*/
+	font-size: 50px; /*Define o tamanho da fonte*/
+	color:#fff;
+	position:absolute;
+	top:10px; /*Define a distancia da parte de cima da pagina*/
+	text-transform:uppercase; /*Define todas as letras como maiusculas*/
+	text-align:left; /*Alinha o texto para a esquerda*/
+	font-family:'Courier New', monospace;
+}
+	/*Fim da div com foto do jogo*/
+	/*Menu para navegar*/
+nav{
+	background:linear-gradient(to top,#daa520 5%,#ff0103);
+	height:20px;
+	width:100%;
+}
+nav a{
+	font-family:'arial';
+	color:#fff;
+	text-decoration:none; /*Define que o texto não tenha nenhuma decoração*/
+}
+nav li{
+	list-style:none;
+	display:inline; /*Mostra os seus elementos alinhados horizontal*/
+	text-aling:center; /*Define o alinhamento do texto para central*/
+	background:#000;
+	height:20px;
+	padding:2px; /*Define o preencimento de todos os lados*/
+	margin:10px; /*Define o espaço entre cada <a>*/
+	border-radius:5px;
+}
+nav li:hover{
+	background:#fff;
+	text-decoration:underline; /*Define a decoração de testo como sublinhada*/
+}
+nav a:hover{ /*Hover identifica quando o mouse esta em cima de um elemento ou não*/
+	color:#000;
+}
+	/*Fim do menu*/
+	/*Parte ajustes do video*/
+#video{
+	width:100%;
+	height:480px;
+	position:relative;
+	background:#daa520;
+	z-index:10;
+}
+#video img{
+	width:100%;
+	height:auto;
+}
+video{
+	position:absolute;
+	z-index:14;
+	margin-left:20%; /*Define a margem esquerda do elemento como 20%*/
+
+}
+	/*Fim da parte video*/
+/*Fim da seção inicial*/
+/*Inicio seção gameplay*/
+	/*Slider Gameplay*/
+#GameplayImagens{
+	position:relative;
+	background:linear-gradient(to bottom,#151515,#000); /*Define a cor de fundo com degrade de 2 cores*/
+	width:75%;
+	height:400px;
+	margin-top:20px;
+	padding-top:10px;
+	margin-bottom:10px;
+	padding-bottom:30px;
+	left:10%;
+	text-decoration:none;
+	border-radius:40px;
+}
+#GameplayImagens p{
+	color:#fff;
+	font-family:'Courier New', monospace;
+	font-size:20px;
+	background:#ff0103;
+	width:80%;
+	height:auto;
+	border-radius:15px;
+}
+#SlideGameplay input{
+	display:none; /*Esconde visualmente e do fluxo do site o elemento*/
+}
+#SlideGameplay img{
+	visibility:hidden; /*Esconde visualmente o elemento*/
+	position:relative;
+	width:700px;
+	left:25%;
+	height:400px;
+}
+#SlideGameplay label{
+	cursor:pointer; /*Define o cursor com aparecia "pointer" quando o mouse está por cima*/
+	height:20px;
+	width:20px;
+	background:#daa520;
+	z-index:10;
+	bottom:10%;
+	position:absolute;
+	border-radius:10px;
+}
+#SlideGameplay li{
+	list-style:none; /*Define o estilo da lista, nesse caso nenhum*/
+	position:absolute;
+}
+#SlideGameplay input:checked~img{
+	visibility:visible; /*Define o elemento como visivel*/
+}
+#SlideGameplay input:checked~label{
+	background:#fff;
+	border-radius:12px;
+	width:24px;
+	height:24px;
+}
+#SlideGameplay label:hover{
+	background:#fff;
+}
+#SlideGameplay li:nth-child(1) label{ /*Define a posição de um elemento filho*/
+	left:30%;
+}
+#SlideGameplay li:nth-child(2) label{
+	left:45%;
+}
+#SlideGameplay li:nth-child(3) label{
+	left:60%;
+}
+#SlideGameplay li:nth-child(4) label{
+	left:75%;
+}
+#SlideGameplay li:nth-child(5) label{
+	left:90%;
+}
+#SlideGameplay li:nth-child(6) label{
+	left:105%;
+}
+#SlideGameplay li:nth-child(7) label{
+	left:120%;
+}
+	/*Fim slider Gameplay*/
+/*Fim da seção gameplay*/
+/*Section Sobre o Jogo*/
+#SobreJogo{
+	width:1000px;
+	height:auto;
+	margin-left:10%;
+	border-radius:50px;
+	background:linear-gradient(to bottom,#ff0103, #640000);
+}
+#SobreJogo img{
+	width:340px;
+	height:388px;
+	position:absolute;
+}
+#SobreJogoTexto{
+	width:60%;
+	margin-left:35%;
+}
+#SobreJogoTexto hr{
+	height:4px;
+	border-radius:3px;
+	background:#fff;
+}
+#SobreJogoTexto h1{
+	font-family:"courier new", monospace;
+	color:#fff;
+}
+#SobreJogoTexto p{
+	font-family:"arial";
+	color:#fff;
+	font-size:18px;
+}
+#SobreJogoTexto h2{
+	font-family:"Georgia", serif;
+	color:#fff;
+}
+#SobreJogoTexto h3{
+	font-family:"courier new";
+	color:#fff;
+}
+/*Fim da section sobre o jogo*/
+/*Seção sobre os personagens*/
+	/*Slider Personagem Geral*/
+#Personagens{
+	position:absolute;
+}
+.SliderPersonagem input{
+	display:none;
+}
+.SliderPersonagem li{
+	list-style:none;
+	position:absolute;
+}
+.SliderPersonagem div{
+	margin:40px;
+	width:1200px;
+	height:400px;
+	left:40px;
+	background:#c0c0c0;
+	border-radius:20px;
+	visibility:hidden;
+}
+.SliderPersonagem label{
+	width:20px;
+	height:20px;
+	z-index:10;
+	background:#000;
+	bottom:50px;
+	cursor:pointer;
+	position:absolute;
+	border-radius:10px;
+}
+.ImgPersonagem{
+	width:210px;
+	height:240px;
+	position:relative;
+	margin-left:30px;
+	margin-top:30px;
+}
+.SliderPersonagem h1{
+	position:absolute;
+	font-family:Georgia, serif;
+	left:30%;
+	top:90px;
+}
+.SliderPersonagem p{
+	position:absolute;
+	font-family:"arial black";
+	left:30%;
+	top:180px;
+}
+.SliderPersonagem hr{
+	position:relative;
+	bottom:45%;
+	height:8px;
+	border-radius:4px;
+	left:25%;
+	width:40%;
+	border-style:none;
+}
+.SliderPersonagem input:checked~div{
+	visibility:visible;
+}
+.SliderPersonagem input:checked~label{
+	background:#FFF;
+}
+.SliderPersonagem label:hover{
+	width:24px;
+	height:24px;
+	border-radius:12px;
+	background:#fff;
+}
+.SliderPersonagem li:nth-child(1) label{
+	left:15%;
+}
+.SliderPersonagem li:nth-child(2) label{
+	left:25%;
+}
+.SliderPersonagem li:nth-child(3) label{
+	left:35%;
+}
+.SliderPersonagem li:nth-child(4) label{
+	left:45%;
+}
+.SliderPersonagem li:nth-child(5) label{
+	left:55%;
+}
+.SliderPersonagem li:nth-child(6) label{
+	left:65%;
+}
+	/*Fim Slidergeral*/ 
+	/*Div slider de cada personagem*/
+#Fool{
+	background:#ff0103;
+	color:#fff;
+}
+#Fool hr{
+	background:#fff;
+	position:absolute;	
+	bottom:70%;
+	left:30%;
+	width:20%;
+}
+#Fool img{
+	margin-left:30px;
+	margin-top:30px;
+}
+#Chariot{
+	background:#cdb524;
+	color:#a20e10;
+}
+#Chariot hr{
+	background:#a20e10;
+}
+#Magician{
+	background:#262626;
+	color:#fff;
+}
+#Magician hr{
+	background:#fff;
+}
+#Strength{
+	background:#15155b;
+	color:#edfc38;
+}
+#Strength hr{
+	background:#edfc38;
+}
+#Hierophant{
+	background:#1c0900;
+	color:#e25d5f;
+}
+#Hierophant hr{
+	background:#e25d5f;
+}
+#Faith{
+	background:#640000;
+	color:#edfc38;
+}
+#Faith hr{
+	background:#edfc38;
+}
+	/*Fim das divs personagens*/
+/*Fim dos Section dos persoangens*/
+/*Section sobre o site*/
+footer{
+	width:100%;
+	height:250px;
+	margin-top:40%;
+	background:linear-gradient(to bottom,#ff0103,#000);
+	color:#fff;
+	font-family:"arial";
+}
+footer h1{
+	font-family:"georgia"; 
+}
+footer h2{
+	font-family:"georgia";
+}
+footer hr{
+	background:#fff;
+}
+/*Fim section sobre o site*/
+/*Slider do fundo do site*/
+#FundoSite{
+	position:absolute;
+}
+#FundoSite img{
+	position:fixed;
+	bottom:0;
+	z-index:0;
+	width:100%;
+	height:100%;
+	visibility:hidden;
+}
+#FundoSite li{
+	position:absolute;
+	list-style:none;
+	z-index:-10;
+}
+#FundoSite input{
+	display:none;
+}
+#FundoSite input:checked~img{
+	visibility:visible;
+}
+#FundoLabel{
+	background:#000;
+	color:#fff;
+	font-family:"courier new";
+	z-index:100;
+	right:10%;
+	position:absolute;
+	margin-top:5%;
+	border-radius:6px;
+	font-size:18x;
+	width:110px;
+}
+#FundoLabel:hover{
+	background:#fff;
+	color:#000;
+	text-decoration:underline;
+}
+#FundoSite input:checked~label{
+	background:#fff;
+}
+/*Fim do slider fundo site*/
+</style>
